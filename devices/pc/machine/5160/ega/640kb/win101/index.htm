@@ -2,52 +2,14 @@
 <html lang="en">
 <head>
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-  <title>www.pcjs.org</title>
   <meta charset="utf-8">
-  <link href="/versions/images/current/favicon.ico" rel="shortcut icon" type="image/x-icon">
-  <link href="/versions/pcjs/1.20.1/common.css" rel="stylesheet" type="text/css">
   <link href="/versions/pcjs/1.20.1/components.css" rel="stylesheet" type="text/css">
 </head>
 <body>
   <div class="common">
-    <div class="common-top">
-      <div class="common-top-left">
-        <ul>
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="/apps/pc/">Apps</a>
-          </li>
-          <li>
-            <a href="/disks/pc/">Disks</a>
-          </li>
-          <li>
-            <a href="/devices/pc/machine/">Machines</a>
-          </li>
-          <li>
-            <a href="/docs/">Docs</a>
-          </li>
-          <li>
-            <a href="/pubs/">Pubs</a>
-          </li>
-          <li>
-            <a href="/blog/">Blog</a>
-          </li>
-          <li>
-            <a href="/docs/about/">About</a>
-          </li>
-        </ul>
-      </div>
-      <div class="common-top-right">
-        <p>Powered by <a href="http://nodejs.org" target="_blank">Node.js</a> and <a href="http://aws.amazon.com/elasticbeanstalk/" target="_blank">AWS</a> | <a href="http://github.com/jeffpar/pcjs" target="_blank">GitHub</a></p>
-      </div>
-    </div>
     <div class="common-middle">
-      <p></p>
       <div class="machine pcjs" id="ibm5160">
         <div class="pcjs-machine pcjs-component" data-value="url:''" id="ibm5160.machine" style="">
-          <h2 style="text-align:center;">IBM PC XT, 128K EGA, 640K RAM, 10Mb Hard Drive</h2>
           <div class="pcjs-container" style="border:1px solid black;border-radius:15px;overflow:auto;width:100%;background-color:#FAEBD7;">
             <div class="pcjs-computer pcjs-component" data-value="" id="ibm5160.xt-ega-640k" style="">
               <div class="pcjs-container" style="">
@@ -81,39 +43,7 @@
             </div>
             <div class="pcjs-video pcjs-component" data-value="" id="ibm5160.videoEGA" style="margin:0 auto;padding:8px;">
               <div class="pcjs-container" style="">
-                <div class="pcjs-menu">
-                  Enhanced Color Display
-                </div>
-                <div class="pcjs-control" style="float:right;">
-                  <div class="pcjs-control" style="float:left;padding-left:8px;">
-                    <div class="pcjs-label" style="text-align:right;">
-                      Caps
-                    </div>
-                    <div class="pcjs-binding pcjs-led" data-value="type:'led',binding:'caps-lock'"></div>
-                    <div style="clear:both"></div>
-                  </div>
-                  <div class="pcjs-control" style="float:left;padding-left:8px;">
-                    <div class="pcjs-label" style="text-align:right;">
-                      Num
-                    </div>
-                    <div class="pcjs-binding pcjs-led" data-value="type:'led',binding:'num-lock'"></div>
-                    <div style="clear:both"></div>
-                  </div>
-                  <div class="pcjs-control" style="float:left;padding-left:8px;">
-                    <div class="pcjs-label" style="text-align:right;">
-                      Scroll
-                    </div>
-                    <div class="pcjs-binding pcjs-led" data-value="type:'led',binding:'scroll-lock'"></div>
-                    <div style="clear:both"></div>
-                  </div>
-                  <div class="pcjs-control" style="float:left;padding-left:8px;">
-                    <button class="pcjs-binding" data-value="type:'button',binding:'fullScreen'" style="-webkit-user-select:none;">Full Screen</button>
-                  </div>
-                </div>
                 <div class="pcjs-video-object" data-value="id:'ibm5160.videoEGA',name:'',model:'ega',mode:7,screenWidth:640,screenHeight:350,memory:0x20000,switches:'',scale:false,charCols:80,charRows:25,fontROM:'',screenColor:'black',touchScreen:'mouse',autoLock:true">
-                  <canvas class="pcjs-canvas" height="350" style="height: auto; background-color: black;" width="640"></canvas>
-                  <textarea style="cursor: auto;">
-</textarea>
                 </div>
               </div>
             </div>
@@ -146,70 +76,6 @@
                 </div>
               </div>
             </div>
-            <div class="pcjs-fdc pcjs-component" data-value="" id="ibm5160.fdcNEC" style="float:left;padding-bottom:8px;padding-left:8px;">
-              <div class="pcjs-container" style="">
-                <div class="pcjs-fdc-object" data-value="id:'ibm5160.fdcNEC',name:'',autoMount:'{A:{name:&quot;PC-DOS 2.00 (Disk 1)&quot;,path:&quot;/disks/pc/dos/ibm/2.00/PCDOS200-DISK1.json&quot;}, B:{name:&quot;PC-DOS 2.00 (Disk 2)&quot;,path:&quot;/disks/pc/dos/ibm/2.00/PCDOS200-DISK2.json&quot;}}'"></div>
-                <div class="pcjs-controls">
-                  <div class="pcjs-control" style="float:left;">
-                    <select class="pcjs-binding" data-value="type:'list',binding:'listDrives'" style="">
-                      <option value="0">
-                        A:
-                      </option>
-                      <option value="1">
-                        B:
-                      </option>
-                    </select>
-                  </div>
-                  <div class="pcjs-control" style="float:left;">
-                    <select class="pcjs-binding" data-value="type:'list',binding:'listDisks'" style="">
-                      <option data-value="" value="">
-                        None
-                      </option>
-                      <option data-value="" value="/disks/pc/games/id/wolf3d/1WOLF14.json">
-                        Wolfenstein 3D (v1.4)
-                      </option>
-                      <option data-value="desc:'VisiCalc License',href:'http://www.bricklin.com/history/vclicense.htm'" value="/apps/pc/1981/visicalc/disk.json">
-                        VisiCalc
-                      </option>
-                      <option data-value="desc:'MobyGames',href:'http://www.mobygames.com/game/executive-suite'" value="/apps/pc/1982/esuite/disk.json">
-                        Executive Suite (1982)
-                      </option>
-                      <option data-value="" value="/apps/pc/1985/rogue/disk.json">
-                        Rogue (1985)
-                      </option>
-                      <option data-value="" value="/apps/pc/1987/thinktank/disk.json">
-                        ThinkTank 2.41NP
-                      </option>
-                      <option data-value="" value="/apps/pc/1992/moria/disk.json">
-                        Moria 5.5
-                      </option>
-                      <option data-value="" value="/tests/pc/vga/VGABIN.json">
-                        VGA Tests (Black Book)
-                      </option>
-                      <option value="?">
-                        Local Disk
-                      </option>
-                      <option value="??">
-                        Remote Disk
-                      </option>
-                    </select>
-                  </div>
-                  <div class="pcjs-control" style="float:left;padding-right:8px;">
-                    <button class="pcjs-binding" data-value="type:'button',binding:'loadDrive'" style="-webkit-user-select:none;">Load</button>
-                  </div>
-                  <div class="pcjs-control" style="float:left;padding-right:8px;">
-                    <div class="pcjs-binding pcjs-description" data-value="type:'description',binding:'descDisk'" style="-webkit-user-select:none;"></div>
-                  </div>
-                  <div class="pcjs-control" style="float:left;">
-                    <form class="pcjs-binding" data-value="type:'file',binding:'mountDrive'">
-                      <fieldset class="pcjs-fieldset">
-                        <input type="file"><input disabled type="submit" value="Mount">
-                      </fieldset>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
             <div class="pcjs-chipset pcjs-component" data-value="" id="ibm5160.chipset" style="">
               <div class="pcjs-container" style="">
                 <div class="pcjs-chipset-object" data-value="id:'ibm5160.chipset',name:'',model:'5160',scaleTimers:false,sw1:'01001101',sw2:'',sound:true,floppies:{},monitor:'',rtcDate:''"></div>
@@ -231,23 +97,11 @@
               </div>
             </div>
           </div>
-          <div class="pcjs-copyright">
-            <a href="http://www.pcjs.org" target="_blank">PCjs</a> v1.20.1 © 2012-2015 by <a href="http://twitter.com/jeffpar" target="_blank">@jeffpar</a>
-          </div>
           <div style="clear:both"></div>
         </div>
       </div>
     </div>
-    <div class="common-bottom">
-      <p class="common-reference"></p>
-      <p class="common-copyright"><span class="common-copyright"><a href="http://www.pcjs.org/">pcjs.org</a> website © 2012-2015 by <a href="http://twitter.com/jeffpar">@jeffpar</a></span><br>
-      <span class="common-copyright">PCjs and C1Pjs released under <a href="http://gnu.org/licenses/gpl.html">GPL version 3 or later</a></span></p>
-    </div>
   </div>
-  <script src="/versions/pcjs/1.20.1/pc.js" type="text/javascript">
-  </script>
-  <style type="text/css">
-    embed[type*="application/x-shockwave-flash"],embed[src*=".swf"],object[type*="application/x-shockwave-flash"],object[codetype*="application/x-shockwave-flash"],object[src*=".swf"],object[codebase*="swflash.cab"],object[classid*="D27CDB6E-AE6D-11cf-96B8-444553540000"],object[classid*="d27cdb6e-ae6d-11cf-96b8-444553540000"],object[classid*="D27CDB6E-AE6D-11cf-96B8-444553540000"]{  display: none !important;}
-  </style>
+  <script src="/versions/pcjs/1.20.1/pc.js" type="text/javascript"></script>
 </body>
 </html>
