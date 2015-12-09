@@ -1,3 +1,5 @@
+window.pcjs = function() {
+    
 (function(){var f,aa,ba={163840:[40,1,8],184320:[40,1,9],327680:[40,2,8],368640:[40,2,9],737280:[80,2,9],1228800:[80,2,15],1474560:[80,2,18],2949120:[80,2,36]};
 function ca(a,b){var c;if(a){b||(b=16);if("$"==a.charAt(0))b=16,a=a.substr(1);else if("0x"==a.substr(0,2))b=16,a=a.substr(2);else{var d=a.charAt(a.length-1).toLowerCase();"h"==d?(b=16,d=null):"."==d&&(b=10,d=null);null==d&&(a=a.substr(0,a.length-1))}var e,d=a,k=b;(k&&10!=k?16==k?null!==d.match(/^[0-9a-f]+$/i):2==k&&null!==d.match(/^[01]+$/i):null!==d.match(/^[0-9]+$/))&&!isNaN(e=parseInt(a,b))&&(c=e|0)}return c}
 function da(a,b){var c="";void 0===b?b=8:8<b&&(b=8);if(null==a||isNaN(a))for(;0<b--;)c="?"+c;else for(;0<b--;){var d=a&15,d=d+(0<=d&&9>=d?48:55),c=String.fromCharCode(d)+c;a>>=4}return c}function ea(a,b){var c=a,d=a.lastIndexOf("/");0<=d&&(c=a.substr(d+1));d=c.indexOf("&");0<d&&(c=c.substr(0,d));b&&(d=c.lastIndexOf("."),0<d&&(c=c.substring(0,d)));return c}function fa(a){var b="",c=a.lastIndexOf(".");0<=c&&(b=a.substr(c+1).toLowerCase());return b}
@@ -1038,3 +1040,5 @@ function Qm(a,b,c){var d;if(d=/<([a-z]+)\s+ref="(.*?)"(.*?)\/>/g.exec(a)){var e=
 function Rm(a,b,c,d){function e(a){if(void 0===p){var b=l&&Wa(l,"machine-warning");p=b&&b[0]||l}p&&(p.innerHTML=ha(a))}function k(a){e("Error: "+a);q&&(--Nm||Ga(!0));q=!1}var l,p,q=!0;Nm++;try{if(l=window.document.getElementById(a)){c||(c="/versions/pcjs/1.20.1/components.xsl");var w=function(d,p){if(p){var q=function(d,q){if(q)if(q)if(e("Processing "+b+"..."),window.ActiveXObject||"ActiveXObject"in window){var w=p.transformNode(q);w?(l.outerHTML=w,--Nm||Ga(!0)):k("transformNodeToObject failed")}else window.document.implementation&&
 window.document.implementation.createDocument?(w=new XSLTProcessor,w.importStylesheet(q),(w=w.transformToFragment(p,window.document))?l.parentNode?(l.parentNode.replaceChild(w,l),--Nm||Ga(!0)):k("invalid machine element: "+a):k("transformToFragment failed")):k("unable to transform XML: unsupported browser");else k("failed to load XSL file: "+c);else k(d)};p?Om(c,null,null,!1,e,q):k("failed to load XML file: "+b)}else k(d)};"<"!=b.charAt(0)?Om(b,a,d,!0,e,w):Pm(b,null,a,d,!1,e,w)}else k("missing machine element: "+
 a)}catch(B){k(B.message)}return q}window.embedPC=function(a,b,c,d){Ga(!1);return Rm(a,b,c,d)};window.enableEvents=Ga;window.sendEvent=Ha;})();
+
+};

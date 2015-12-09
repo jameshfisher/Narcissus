@@ -7,6 +7,9 @@
       setTimeout(waitFor, 100, pred, cb);
     }
   };
+
+  pcjs();
+    
   waitFor(
     function () {
       // Seriously, who puts a period in a CSS id?
