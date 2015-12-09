@@ -8,7 +8,81 @@
     }
   };
 
-  window.pcjs = function(complete_callback) {
+  window.pcjs = function(root_element, complete_callback) {
+
+    var root_element_content =
+      "<div class=\"pcjs-machine pcjs-component\">" +
+      "  <div class=\"pcjs-container\">" +
+      "    <div class=\"pcjs-computer pcjs-component\" id=\"ibm5160.xt-ega-640k\">" +
+      "      <div class=\"pcjs-container\">" +
+      "        <div class=\"pcjs-computer-object\" data-value=\"id:'ibm5160.xt-ega-640k',name:'IBM PC XT',busWidth:20,resume:0,state:'/devices/pc/machine/5160/ega/640kb/win101/state.json'\"></div>" +
+      "      </div>" +
+      "    </div>" +
+      "    <div class=\"pcjs-ram pcjs-component\" id=\"ibm5160.ramLow\">" +
+      "      <div class=\"pcjs-container\">" +
+      "        <div class=\"pcjs-ram-object\" data-value=\"id:'ibm5160.ramLow',name:'',comment:'0xa0000 (640Kb) size overrides SW1|ROM BIOS memory test has been disabled',addr:0x00000,size:0xa0000,test:false\"></div>" +
+      "      </div>" +
+      "    </div>" +
+      "    <div class=\"pcjs-rom pcjs-component\" id=\"ibm5160.romEGA\">" +
+      "      <div class=\"pcjs-container\">" +
+      "        <div class=\"pcjs-rom-object\" data-value=\"id:'ibm5160.romEGA',name:'',addr:0xc0000,size:0x4000,alias:null,file:'/devices/pc/video/ibm/ega/ibm-ega.json',notify:'videoEGA'\"></div>" +
+      "      </div>" +
+      "    </div>" +
+      "    <div class=\"pcjs-rom pcjs-component\" id=\"ibm5160.romHDC\">" +
+      "      <div class=\"pcjs-container\">" +
+      "        <div class=\"pcjs-rom-object\" data-value=\"id:'ibm5160.romHDC',name:'',addr:0xc8000,size:0x2000,alias:null,file:'/devices/pc/hdc/ibm-xebec-1982.json',notify:''\"></div>" +
+      "      </div>" +
+      "    </div>" +
+      "    <div class=\"pcjs-rom pcjs-component\" id=\"ibm5160.romBASIC\">" +
+      "      <div class=\"pcjs-container\">" +
+      "        <div class=\"pcjs-rom-object\" data-value=\"id:'ibm5160.romBASIC',name:'',addr:0xf6000,size:0x8000,alias:null,file:'/devices/pc/basic/ibm-basic-1.10.json',notify:''\"></div>" +
+      "      </div>" +
+      "    </div>" +
+      "    <div class=\"pcjs-rom pcjs-component\" id=\"ibm5160.romBIOS\">" +
+      "      <div class=\"pcjs-container\">" +
+      "        <div class=\"pcjs-rom-object\" data-value=\"id:'ibm5160.romBIOS',name:'',addr:0xfe000,size:0x2000,alias:null,file:'/devices/pc/bios/5160/1982-11-08.json',notify:''\"></div>" +
+      "      </div>" +
+      "    </div>" +
+      "    <div class=\"pcjs-video pcjs-component\" id=\"ibm5160.videoEGA\">" +
+      "      <div class=\"pcjs-container\">" +
+      "        <div class=\"pcjs-video-object\" data-value=\"id:'ibm5160.videoEGA',name:'',model:'ega',mode:7,screenWidth:640,screenHeight:350,memory:0x20000,switches:'',scale:false,charCols:80,charRows:25,fontROM:'',screenColor:'black',touchScreen:'mouse',autoLock:true\">" +
+      "        </div>" +
+      "      </div>" +
+      "    </div>" +
+      "    <div class=\"pcjs-keyboard pcjs-component\" id=\"ibm5160.keyboard\">" +
+      "      <div class=\"pcjs-container\">" +
+      "        <div class=\"pcjs-keyboard-object\" data-value=\"id:'ibm5160.keyboard',name:'',model:''\"></div>" +
+      "      </div>" +
+      "    </div>" +
+      "    <div class=\"pcjs-cpu pcjs-component\" id=\"ibm5160.cpu8088\">" +
+      "      <div class=\"pcjs-container\">" +
+      "        <div class=\"pcjs-cpu-object\" data-value=\"id:'ibm5160.cpu8088',name:'',model:8088,stepping:'',fpu:0,cycles:0,multiplier:1,autoStart:null,csStart:-1,csInterval:-1,csStop:-1\"></div>" +
+      "      </div>" +
+      "    </div>" +
+      "    <div class=\"pcjs-chipset pcjs-component\" id=\"ibm5160.chipset\">" +
+      "      <div class=\"pcjs-container\">" +
+      "        <div class=\"pcjs-chipset-object\" data-value=\"id:'ibm5160.chipset',name:'',model:'5160',scaleTimers:false,sw1:'01001101',sw2:'',sound:true,floppies:{},monitor:'',rtcDate:''\"></div>" +
+      "      </div>" +
+      "    </div>" +
+      "    <div class=\"pcjs-hdc pcjs-component\" id=\"ibm5160.hdcXT\">" +
+      "      <div class=\"pcjs-container\">" +
+      "        <div class=\"pcjs-hdc-object\" data-value=\"id:'ibm5160.hdcXT',name:'',drives:'[{name:&quot;10Mb Hard Disk&quot;,path:&quot;/disks/pc/fixed/10mb/pcdos200-win101-ega.json&quot;,type:3}]',type:'xt'\"></div>" +
+      "      </div>" +
+      "    </div>" +
+      "    <div class=\"pcjs-serial pcjs-component\" id=\"ibm5160.com2\">" +
+      "      <div class=\"pcjs-container\">" +
+      "        <div class=\"pcjs-serial-object\" data-value=\"id:'ibm5160.com2',name:'',adapter:2,binding:''\"></div>" +
+      "      </div>" +
+      "    </div>" +
+      "    <div class=\"pcjs-mouse pcjs-component\" id=\"ibm5160.mouse\">" +
+      "      <div class=\"pcjs-container\">" +
+      "        <div class=\"pcjs-mouse-object\" data-value=\"id:'ibm5160.mouse',name:'',serial:'com2'\"></div>" +
+      "      </div>" +
+      "    </div>" +
+      "  </div>" +
+      "</div>";
+
+    root_element.innerHTML = root_element_content;
     
 (function(){var f,aa,ba={163840:[40,1,8],184320:[40,1,9],327680:[40,2,8],368640:[40,2,9],737280:[80,2,9],1228800:[80,2,15],1474560:[80,2,18],2949120:[80,2,36]};
 function ca(a,b){var c;if(a){b||(b=16);if("$"==a.charAt(0))b=16,a=a.substr(1);else if("0x"==a.substr(0,2))b=16,a=a.substr(2);else{var d=a.charAt(a.length-1).toLowerCase();"h"==d?(b=16,d=null):"."==d&&(b=10,d=null);null==d&&(a=a.substr(0,a.length-1))}var e,d=a,k=b;(k&&10!=k?16==k?null!==d.match(/^[0-9a-f]+$/i):2==k&&null!==d.match(/^[01]+$/i):null!==d.match(/^[0-9]+$/))&&!isNaN(e=parseInt(a,b))&&(c=e|0)}return c}
