@@ -6,79 +6,72 @@
   <link href="/versions/pcjs/1.20.1/components.css" rel="stylesheet" type="text/css">
 </head>
 <body style="margin:0">
-  <div class="common">
-    <div class="common-middle">
-      <div class="machine pcjs" id="ibm5160">
-        <div class="pcjs-machine pcjs-component" data-value="url:''" id="ibm5160.machine" style="">
-          <div class="pcjs-container">
-            <div class="pcjs-computer pcjs-component" data-value="" id="ibm5160.xt-ega-640k" style="">
-              <div class="pcjs-container" style="">
-                <div class="pcjs-computer-object" data-value="id:'ibm5160.xt-ega-640k',name:'IBM PC XT',busWidth:20,resume:0,state:'/devices/pc/machine/5160/ega/640kb/win101/state.json'"></div>
-              </div>
-            </div>
-            <div class="pcjs-ram pcjs-component" data-value="" id="ibm5160.ramLow" style="">
-              <div class="pcjs-container" style="">
-                <div class="pcjs-ram-object" data-value="id:'ibm5160.ramLow',name:'',comment:'0xa0000 (640Kb) size overrides SW1|ROM BIOS memory test has been disabled',addr:0x00000,size:0xa0000,test:false"></div>
-              </div>
-            </div>
-            <div class="pcjs-rom pcjs-component" data-value="" id="ibm5160.romEGA" style="">
-              <div class="pcjs-container" style="">
-                <div class="pcjs-rom-object" data-value="id:'ibm5160.romEGA',name:'',addr:0xc0000,size:0x4000,alias:null,file:'/devices/pc/video/ibm/ega/ibm-ega.json',notify:'videoEGA'"></div>
-              </div>
-            </div>
-            <div class="pcjs-rom pcjs-component" data-value="" id="ibm5160.romHDC" style="">
-              <div class="pcjs-container" style="">
-                <div class="pcjs-rom-object" data-value="id:'ibm5160.romHDC',name:'',addr:0xc8000,size:0x2000,alias:null,file:'/devices/pc/hdc/ibm-xebec-1982.json',notify:''"></div>
-              </div>
-            </div>
-            <div class="pcjs-rom pcjs-component" data-value="" id="ibm5160.romBASIC" style="">
-              <div class="pcjs-container" style="">
-                <div class="pcjs-rom-object" data-value="id:'ibm5160.romBASIC',name:'',addr:0xf6000,size:0x8000,alias:null,file:'/devices/pc/basic/ibm-basic-1.10.json',notify:''"></div>
-              </div>
-            </div>
-            <div class="pcjs-rom pcjs-component" data-value="" id="ibm5160.romBIOS" style="">
-              <div class="pcjs-container" style="">
-                <div class="pcjs-rom-object" data-value="id:'ibm5160.romBIOS',name:'',addr:0xfe000,size:0x2000,alias:null,file:'/devices/pc/bios/5160/1982-11-08.json',notify:''"></div>
-              </div>
-            </div>
-            <div class="pcjs-video pcjs-component" data-value="" id="ibm5160.videoEGA">
-              <div class="pcjs-container" style="">
-                <div class="pcjs-video-object" data-value="id:'ibm5160.videoEGA',name:'',model:'ega',mode:7,screenWidth:640,screenHeight:350,memory:0x20000,switches:'',scale:false,charCols:80,charRows:25,fontROM:'',screenColor:'black',touchScreen:'mouse',autoLock:true">
-                </div>
-              </div>
-            </div>
-            <div class="pcjs-keyboard pcjs-component" data-value="" id="ibm5160.keyboard">
-              <div class="pcjs-container" style="">
-                <div class="pcjs-keyboard-object" data-value="id:'ibm5160.keyboard',name:'',model:''"></div>
-              </div>
-            </div>
-            <div class="pcjs-cpu pcjs-component" data-value="" id="ibm5160.cpu8088" style="">
-              <div class="pcjs-container" style="">
-                <div class="pcjs-cpu-object" data-value="id:'ibm5160.cpu8088',name:'',model:8088,stepping:'',fpu:0,cycles:0,multiplier:1,autoStart:null,csStart:-1,csInterval:-1,csStop:-1"></div>
-              </div>
-            </div>
-            <div class="pcjs-chipset pcjs-component" data-value="" id="ibm5160.chipset" style="">
-              <div class="pcjs-container" style="">
-                <div class="pcjs-chipset-object" data-value="id:'ibm5160.chipset',name:'',model:'5160',scaleTimers:false,sw1:'01001101',sw2:'',sound:true,floppies:{},monitor:'',rtcDate:''"></div>
-              </div>
-            </div>
-            <div class="pcjs-hdc pcjs-component" data-value="" id="ibm5160.hdcXT" style="">
-              <div class="pcjs-container" style="">
-                <div class="pcjs-hdc-object" data-value="id:'ibm5160.hdcXT',name:'',drives:'[{name:&quot;10Mb Hard Disk&quot;,path:&quot;/disks/pc/fixed/10mb/pcdos200-win101-ega.json&quot;,type:3}]',type:'xt'"></div>
-              </div>
-            </div>
-            <div class="pcjs-serial pcjs-component" data-value="" id="ibm5160.com2" style="">
-              <div class="pcjs-container" style="">
-                <div class="pcjs-serial-object" data-value="id:'ibm5160.com2',name:'',adapter:2,binding:''"></div>
-              </div>
-            </div>
-            <div class="pcjs-mouse pcjs-component" data-value="" id="ibm5160.mouse" style="">
-              <div class="pcjs-container" style="">
-                <div class="pcjs-mouse-object" data-value="id:'ibm5160.mouse',name:'',serial:'com2'"></div>
-              </div>
-            </div>
+  <div class="pcjs-machine pcjs-component" data-value="url:''" id="ibm5160.machine" style="">
+    <div class="pcjs-container">
+      <div class="pcjs-computer pcjs-component" data-value="" id="ibm5160.xt-ega-640k" style="">
+        <div class="pcjs-container" style="">
+          <div class="pcjs-computer-object" data-value="id:'ibm5160.xt-ega-640k',name:'IBM PC XT',busWidth:20,resume:0,state:'/devices/pc/machine/5160/ega/640kb/win101/state.json'"></div>
+        </div>
+      </div>
+      <div class="pcjs-ram pcjs-component" data-value="" id="ibm5160.ramLow" style="">
+        <div class="pcjs-container" style="">
+          <div class="pcjs-ram-object" data-value="id:'ibm5160.ramLow',name:'',comment:'0xa0000 (640Kb) size overrides SW1|ROM BIOS memory test has been disabled',addr:0x00000,size:0xa0000,test:false"></div>
+        </div>
+      </div>
+      <div class="pcjs-rom pcjs-component" data-value="" id="ibm5160.romEGA" style="">
+        <div class="pcjs-container" style="">
+          <div class="pcjs-rom-object" data-value="id:'ibm5160.romEGA',name:'',addr:0xc0000,size:0x4000,alias:null,file:'/devices/pc/video/ibm/ega/ibm-ega.json',notify:'videoEGA'"></div>
+        </div>
+      </div>
+      <div class="pcjs-rom pcjs-component" data-value="" id="ibm5160.romHDC" style="">
+        <div class="pcjs-container" style="">
+          <div class="pcjs-rom-object" data-value="id:'ibm5160.romHDC',name:'',addr:0xc8000,size:0x2000,alias:null,file:'/devices/pc/hdc/ibm-xebec-1982.json',notify:''"></div>
+        </div>
+      </div>
+      <div class="pcjs-rom pcjs-component" data-value="" id="ibm5160.romBASIC" style="">
+        <div class="pcjs-container" style="">
+          <div class="pcjs-rom-object" data-value="id:'ibm5160.romBASIC',name:'',addr:0xf6000,size:0x8000,alias:null,file:'/devices/pc/basic/ibm-basic-1.10.json',notify:''"></div>
+        </div>
+      </div>
+      <div class="pcjs-rom pcjs-component" data-value="" id="ibm5160.romBIOS" style="">
+        <div class="pcjs-container" style="">
+          <div class="pcjs-rom-object" data-value="id:'ibm5160.romBIOS',name:'',addr:0xfe000,size:0x2000,alias:null,file:'/devices/pc/bios/5160/1982-11-08.json',notify:''"></div>
+        </div>
+      </div>
+      <div class="pcjs-video pcjs-component" data-value="" id="ibm5160.videoEGA">
+        <div class="pcjs-container" style="">
+          <div class="pcjs-video-object" data-value="id:'ibm5160.videoEGA',name:'',model:'ega',mode:7,screenWidth:640,screenHeight:350,memory:0x20000,switches:'',scale:false,charCols:80,charRows:25,fontROM:'',screenColor:'black',touchScreen:'mouse',autoLock:true">
           </div>
-          <div style="clear:both"></div>
+        </div>
+      </div>
+      <div class="pcjs-keyboard pcjs-component" data-value="" id="ibm5160.keyboard">
+        <div class="pcjs-container" style="">
+          <div class="pcjs-keyboard-object" data-value="id:'ibm5160.keyboard',name:'',model:''"></div>
+        </div>
+      </div>
+      <div class="pcjs-cpu pcjs-component" data-value="" id="ibm5160.cpu8088" style="">
+        <div class="pcjs-container" style="">
+          <div class="pcjs-cpu-object" data-value="id:'ibm5160.cpu8088',name:'',model:8088,stepping:'',fpu:0,cycles:0,multiplier:1,autoStart:null,csStart:-1,csInterval:-1,csStop:-1"></div>
+        </div>
+      </div>
+      <div class="pcjs-chipset pcjs-component" data-value="" id="ibm5160.chipset" style="">
+        <div class="pcjs-container" style="">
+          <div class="pcjs-chipset-object" data-value="id:'ibm5160.chipset',name:'',model:'5160',scaleTimers:false,sw1:'01001101',sw2:'',sound:true,floppies:{},monitor:'',rtcDate:''"></div>
+        </div>
+      </div>
+      <div class="pcjs-hdc pcjs-component" data-value="" id="ibm5160.hdcXT" style="">
+        <div class="pcjs-container" style="">
+          <div class="pcjs-hdc-object" data-value="id:'ibm5160.hdcXT',name:'',drives:'[{name:&quot;10Mb Hard Disk&quot;,path:&quot;/disks/pc/fixed/10mb/pcdos200-win101-ega.json&quot;,type:3}]',type:'xt'"></div>
+        </div>
+      </div>
+      <div class="pcjs-serial pcjs-component" data-value="" id="ibm5160.com2" style="">
+        <div class="pcjs-container" style="">
+          <div class="pcjs-serial-object" data-value="id:'ibm5160.com2',name:'',adapter:2,binding:''"></div>
+        </div>
+      </div>
+      <div class="pcjs-mouse pcjs-component" data-value="" id="ibm5160.mouse" style="">
+        <div class="pcjs-container" style="">
+          <div class="pcjs-mouse-object" data-value="id:'ibm5160.mouse',name:'',serial:'com2'"></div>
         </div>
       </div>
     </div>
