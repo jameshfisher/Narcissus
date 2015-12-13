@@ -1128,7 +1128,7 @@ a)}catch(B){k(B.message)}return q}window.embedPC=function(a,b,c,d){Ga(!1);return
     waitFor(
       function () {
         // Seriously, who puts a period in a CSS id?
-        return document.querySelector("div#ibm5160\\.videoEGA canvas.pcjs-canvas");
+        return root_element.querySelector("div#ibm5160\\.videoEGA canvas.pcjs-canvas");
       },
       complete_callback
     );
